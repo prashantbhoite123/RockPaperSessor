@@ -1,0 +1,122 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #D20062;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  height: 90%;
+  width: 70%;
+  border-top-left-radius: 5vw;
+  border-bottom-right-radius: 5vw;
+  background-color: #000;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+.choices {
+  display: flex;
+  gap: 3vw;
+  margin-top: 3vw;
+}
+.GameHeading {
+    color: #41C9E2;
+    font-size: 3.5vw;
+    font-weight: 800;
+}
+.choise {
+  border-radius: 50%;
+  height: 6vw;
+  width: 6vw;
+  background-color: #EFBC9B;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.choise:hover {
+  transform: scale(1.1);
+}
+.choise img {
+  border-radius: 50%;
+  height: 5vw;
+  width: 5vw;
+  border: none;
+}
+.scoreBord {
+  margin-top: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+}
+.score {
+  font-size: 2vw;
+  text-align: center;
+  color: white;
+}
+.msgContainer {
+  background-color: #135d66;
+  height: 4vw;
+  width: 20vw;
+  margin-top: 4vw;
+  border-radius: 1vw;
+  display: flex;
+  justify-content: center;
+  border-top-right-radius: 4vw;
+  border-bottom-left-radius: 4vw;
+  align-items: center;
+}
+#msg {
+  font-size: 2vw;
+  color: white;
+}
+
+@media (max-width:700px) {
+  .container{
+    width: 100%;
+    gap: 5vw;
+  }
+  .content {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  .GameHeading {
+    font-size: 8.5vw;
+    margin-bottom: 3vw;
+  } 
+  .choise {
+    height: 12vw;
+    width:12vw;
+    margin-top:3vw ;
+  }
+  .choise img {
+    height: 11vw;
+    width: 11vw;
+  }
+  .msgContainer {
+    height: 10vw;
+    width: 40vw;
+    margin-top: 8vw;
+  }
+  #msg {
+    font-size: 4vw;
+  }
+  .score {
+    font-size: 4vw;
+    margin-top: 5vw;
+  }
+}

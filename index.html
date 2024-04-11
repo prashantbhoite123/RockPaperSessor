@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Sessor</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+       <h1 class="GameHeading">Rock Paper Scrisor</h1>
+       <div class="choices">
+        <div id="rock" class="choise">
+          <img src="./RPGimg/rock.png" alt="">
+        </div>
+        <div id="paper" class="choise">
+          <img src="./RPGimg/paper2.png" alt="">
+        </div>
+        <div id="scrissors" class="choise">
+          <img src="./RPGimg/scrissor.png" alt="">
+        </div>
+       </div>
+
+              <div class="scoreBord">
+          <div class="score">
+            <p id="userScore  ">0</p>
+            <p>You</p>
+          </div>
+
+          <div class="score">
+            <p id="CompScore">0</p>
+            <p>comp</p>
+          </div>
+        </div>
+
+        <div class="msgContainer">
+          <div id="msg">Play Your Move</div>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
